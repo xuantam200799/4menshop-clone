@@ -1,0 +1,48 @@
+@use '../../scss/' as *;
+
+.policy-wapper {
+    background-color: $main-bg;
+    padding: 40px 40px;
+}
+
+.policy {
+    background-color: $main-bg;
+
+    &__title {
+        @include flex(flex-start, flex-start);
+        margin: 0 0 1.2rem 0;
+
+        &__logo {
+            margin-right: 0.5rem;
+            & i {
+                font-size: 4rem;
+                color: $txt-main-color;
+                opacity: 0.3;
+                cursor: pointer;
+                transition: opacity 0.5s ease;
+    
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        
+
+        &__txt {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 1rem 0;
+        }
+
+        &__seperate {
+            border-bottom: 1px solid #ccc;
+            width: 150px;
+        }
+    }
+
+    &__content {
+        color: $txt-main-color;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}
